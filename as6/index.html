@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Geass</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="as6css.css">
+</head>
+<body>
+
+
+<section class="banner">
+    <div class="banner-content">
+        <h1>Code Geass</h1>
+        <button class="cta-btn">สมัครเลย</button>
+    </div>
+</section>
+
+
+<section class="heading">
+    <h2>Code Geass</h2>
+    <p class="heading-content">
+        <strong>Code Geass</strong> (ญี่ปุ่น: コードギアス) หรือชื่อเต็ม 
+        <strong>Code Geass: Lelouch of the Rebellion</strong> เป็นอนิเมะแนวแอ็กชัน–การเมือง–ไซไฟ
+        <br><br>
+        เล่าเรื่องของ <strong>Lelouch Lamperouge</strong> เจ้าชายที่ถูกเนรเทศจากจักรวรรดิ 
+        <strong>Holy Britannian Empire</strong> เขาได้รับพลังลึกลับชื่อ “Geass” 
+        ที่สามารถสั่งให้ใครก็ตามทำตามคำสั่งได้หนึ่งครั้ง
+        <br><br>
+        เลลูชจึงสวมหน้ากากในนาม “Zero” นำกองกำลังกบฏเพื่อล้มล้างจักรวรรดิ
+        และสร้างโลกที่ดีกว่าสำหรับน้องสาวของเขา
+        <br><br>
+        <strong>สรุปสั้นๆ:</strong> เป็นเรื่องการปฏิวัติ การวางแผนเชิงกลยุทธ์ 
+        และศีลธรรมของการใช้พลังอำนาจ ✨
+    </p>
+</section>
+
+<section class="gallery">
+    <div class="gallery-item"><img src="0.webp" alt=""></div>
+    <div class="gallery-item"><img src="1.webp" alt=""></div>
+    <div class="gallery-item"><img src="2.jpg" alt=""></div>
+    <div class="gallery-item"><img src="3.webp" alt=""></div>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Lelouch Lamperouge</h3>
+        <p>
+            อัจฉริยะผู้ใช้สติปัญญาเป็นอาวุธ เขาสวมหน้ากากในนาม “Zero”
+            และวางแผนโค่นล้มจักรวรรดิด้วยกลยุทธ์ที่เหนือชั้น
+        </p>
+        <button>ดูตัวละคร</button>
+    </div>
+
+    <div class="card">
+        <h3>The Power of Geass</h3>
+        <p>
+            พลังลึกลับที่สามารถบังคับให้ผู้อื่นทำตามคำสั่งได้หนึ่งครั้ง
+            พลังนี้คือกุญแจสำคัญของการปฏิวัติ
+        </p>
+        <button>ดูพลัง</button>
+    </div>
+
+    <div class="card">
+        <h3>The Rebellion</h3>
+        <p>
+            การลุกขึ้นสู้ของ Black Knights คือจุดเริ่มต้นของสงคราม
+            และการต่อสู้เพื่อเสรีภาพ
+        </p>
+        <button>ดูการปฏิวัติ</button>
+    </div>
+
+    <div class="card">
+        <h3>Moral Conflict</h3>
+        <p>
+            เรื่องราวสะท้อนคำถามว่า “อำนาจเพื่อความถูกต้อง”
+            คุ้มค่ากับการเสียสละหรือไม่
+        </p>
+        <button>ดูแนวคิด</button>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <p>จัดทำโดย 68086864 khwanmueang jandang</p>
+        <p>© มหาวิทยาลัยศรีปทุม 2410/2 ถ.พหลโยธิน เขตจตุจักร กรุงเทพฯ 10900</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-line"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<button id="darkModeToggle" class="floating-btn dark-btn">
+    <i class="fa-solid fa-moon"></i>
+</button>
+
+<button id="backToTop" class="floating-btn top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+const toggleBtn = document.getElementById("darkModeToggle");
+const icon = toggleBtn.querySelector("i");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+});
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "flex" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+</body>
+</html>
